@@ -1,0 +1,59 @@
+body {
+    background-color: #a6b4ad;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin: 20px;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between; /* Ensure map and chart are side by side */
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+#map {
+    height: 800px;
+    width: 60%;
+    background-color: rgb(101, 101, 136);
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column; /* Stack description, chart, and buttons vertically */
+    width: 100%;
+    margin-left: 60px;
+}
+
+#chart {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#description {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+
+
+
