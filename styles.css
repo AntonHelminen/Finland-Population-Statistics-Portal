@@ -16,15 +16,13 @@ h3 {
 
 #main-container {
     display: flex;
-    justify-content: space-between; /* Ensure map and chart are side by side */
-    align-items: flex-start;
     width: 100%;
     padding: 30px;
 }
 
 #map {
     height: 800px;
-    width: 100%;
+    width: 60%;
     background-color: rgb(101, 101, 136);
 }
 
@@ -77,6 +75,42 @@ button {
 }
 
 
-@media (max-width: 800px) {
-    
+@media (max-width: 1000px) {
+    #main-container {
+        flex-direction: column; /* Stack map and chart on top of each other */
+        align-items: center; /* Center them */
+    }
+
+    #map {
+        width: 100%;
+        height: 800px; /* Smaller height for mobile */
+    }
+
+    #right-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #chart {
+        width: 100%;
+        height: 300px; /* Adjust chart height */
+    }
+
+    #button-container {
+        padding-top: 100px;
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin: 10px 0; /* Add more vertical margin for better spacing */
+        align-self: center;
+    }
+    #slider-container {
+        padding: 10px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(63, 83, 100);
+      }
 }
