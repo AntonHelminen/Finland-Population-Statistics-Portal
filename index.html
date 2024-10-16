@@ -15,17 +15,25 @@
         
     </head>
     <body>
-        <h1>Statistics portal</h1>
+        <h1>Finnish population statistics portal</h1>
         <main id="main-container">
             <div id="map"></div>
             <div id="right-container">
-                <label id="description">This site visualizes data of finnish municipalities. Included statistics contain...</label>
+                <label id="description">This site visualizes data of finnish municipalities. Included statistics contain population, births and deaths and employment in each of the 
+                    provinces as well as the whole country. There is also a function to predict new data points. You can also download the latest chart as a png.</label>
+
                 <div id="chart"></div>
                 <div id="button-container">
                     <button id="population-chart-button">Population</button>
                     <button id="birth-death-chart-button">Births/Deaths</button>
-                    <button id="third">3</button>
-                    <button id="add-data">+</button>
+                    <button id="employment-chart-button">Employment</button>
+                    <button id="add-data">Predict data to all</button>
+                </div>
+                <div id="slider-container">
+                    <h3 id="slider-value">2022</h3>
+                    <div class="slidecontainer">
+                        <input type="range" min="2000" max="2022" value="2022" class="slider" id="year-slider">
+                    </div>
                 </div>
                 <button id="save-image">Download graph as image</button>
             </div>
