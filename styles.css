@@ -24,7 +24,7 @@ h3 {
 
 #map {
     height: 800px;
-    width: 60%;
+    width: 100%;
     background-color: rgb(101, 101, 136);
 }
 
@@ -74,4 +74,9 @@ button {
 
 .slider {
     width: 100%;
+}
+
+
+@media (max-width: 800px) {
+    
 }
